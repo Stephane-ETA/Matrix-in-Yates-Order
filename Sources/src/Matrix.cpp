@@ -96,3 +96,7 @@ void Matrix::fillMatrix()
     }
 
 }
+
+int** Matrix::getMatrix(){
+    return this->matrix;
+}
