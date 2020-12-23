@@ -6,6 +6,8 @@ class Matrix
 private:
     int **matrix;
     int numberOfFactor;
+    int numberOfExperiment;
+    int numberOfColumn;
 
 public:
     Matrix(int numberOfFactor);
