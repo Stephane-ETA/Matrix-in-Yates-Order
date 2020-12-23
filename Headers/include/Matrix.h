@@ -1,5 +1,6 @@
 #ifndef MATRIX_H
 #define MATRIX_H
+#include "vector"
 
 class Matrix
 {
@@ -11,6 +12,8 @@ private:
 
 public:
     Matrix(int numberOfFactor);
+     std::vector<std::vector<int> > getCombinations();  //interactions combinations
+    void fillMatrix();
     int** getMatrix();
     int getNumberOfFactor();
     int printMatrix();

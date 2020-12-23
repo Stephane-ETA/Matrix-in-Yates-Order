@@ -1,5 +1,7 @@
 #include "Matrix.h"
 #include "math.h"
+#include <algorithm>
+#include <String>
 
 Matrix::Matrix(int numberOfFactor)
 {
@@ -15,4 +17,30 @@ Matrix::Matrix(int numberOfFactor)
 
     }
 
+  fillMatrix();
+}
+
+
+std::vector<std::vector<int> >  Matrix::getCombinations()
+{
+  std::vector<std::vector<int> > allCombi;
+    int N=numberOfFactor;
+
+
+    for(int K=2;K<N+1;K++)
+    {
+    std::string bitmask(K,1);
+    bitmask.resize(N,0);
+    do {
+        std::vector<int> oneCombi;
+        for(int i=1;i<N+1;i++)
+        {
+            if(bitmask[i-1]) oneCombi.push_back(i);
+        }
+        allCombi.push_back(oneCombi);
+    }
+    while(std::prev_permutation(bitmask.begin(),bitmask.end()));
+
+    }
+    return allCombi;
 }
