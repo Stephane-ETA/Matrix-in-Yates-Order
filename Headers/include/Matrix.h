@@ -16,7 +16,7 @@ public:
     void fillMatrix();
     int** getMatrix();
     int getNumberOfFactor();
-    int printMatrix();
+    void printMatrix();
     ~Matrix();
 };
 

@@ -2,6 +2,7 @@
 #include "math.h"
 #include <algorithm>
 #include <String>
+#include <iostream>
 
 Matrix::Matrix(int numberOfFactor)
 {
@@ -99,4 +100,24 @@ void Matrix::fillMatrix()
 
 int** Matrix::getMatrix(){
     return this->matrix;
+}
+
+void Matrix::printMatrix()
+{
+    std::cout<<std::endl<<"Matrice de dispersion :"<<std::endl;
+for(int i=0;i<numberOfExperiment;i++)
+ {
+     for(int j=0;j<numberOfColumn;j++)
+     {
+         if(matrix[i][j]==-1)
+         {
+           std::cout<<"  "<<matrix[i][j]<<"  ";
+         }
+         else{
+            std::cout<<"   "<<matrix[i][j]<<"  ";
+         }
+
+     }
+     std::cout<<"\n";
+ }
 }
