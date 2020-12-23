@@ -14,3 +14,9 @@ Before performing a Yates analysis, the data should be arranged in "Yates order"
 # What do you get with this code?
 This code generate a matrix in Yates Order for a full factorial Experiement. It can be use to implement the Yates Analysis
 
+# TO DO LIST
+- Update the header path into main.cpp and matrix.cpp
+
+# use case
+![image]
+(C:\Users\User\Desktop\usecase.png "Use Case")
