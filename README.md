@@ -18,5 +18,4 @@ This code generate a matrix in Yates Order for a full factorial Experiement. It 
 - Update the header path into main.cpp and matrix.cpp
 
 # use case
-![image]
-(C:\Users\User\Desktop\usecase.png "Use Case")
+![alt text](https://github.com/stephane-eta/Matrix-in-Yates-Order/blob/main/usecase.png?raw=true "Use Case")
