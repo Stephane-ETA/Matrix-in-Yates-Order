@@ -121,3 +121,8 @@ for(int i=0;i<numberOfExperiment;i++)
      std::cout<<"\n";
  }
 }
+
+Matrix::~Matrix()
+{
+    delete [] this->matrix;
+}
